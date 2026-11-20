@@ -122,6 +122,7 @@ Edit instruction template:
 | `manual/manual-kit.md` | Copy-and-paste prompts for any chat assistant |
 | `examples/` | A fully invented interview extract and one resulting page prompt, plus two anonymised example images in `examples/images/` |
 | `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
+| `CODE_OF_CONDUCT.md`, `SECURITY.md` | Community conduct and how to report problems privately |
 | `LICENSE` | MIT |
 
 ## Feedback

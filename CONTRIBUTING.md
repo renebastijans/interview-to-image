@@ -33,6 +33,10 @@ The pull request template has a checklist that repeats these points.
 
 British English, plain wording, no jargon. Short sentences. Examples must be invented.
 
+## Conduct
+
+Be kind and constructive. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
 ## Licence
 
 By contributing you agree your work is released under the repository's [MIT licence](LICENSE).
