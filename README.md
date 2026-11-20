@@ -1,14 +1,14 @@
 # interview-to-image
 
-Research findings often land better as a picture than as a paragraph. This skill turns interview transcripts, summaries or profiles into prompts for an image generator, by default a hand-drawn research comic, so you can present findings (or any other work) in a more engaging, relatable way than a report alone. Use the images instead of a report, or alongside one to make the findings easier to remember. Free, MIT licensed.
+Research findings may land better as a picture than as a paragraph. This skill turns interview transcripts, summaries or profiles into prompts for an image generator, by default a hand-drawn research comic, so you can present findings (or any other work) in a more engaging, relatable way than a report alone. Use the images instead of a report, or alongside one to make the findings easier to remember. Free, MIT licensed.
 
 A "profile" here means a short write-up of one interview: a summary of the key points with a few quotes. A summary is the same idea, shorter and without quotes.
 
-It interviews you first (source, privacy, image type, audience, where the image will be used), pulls candidate moments out of your material, writes one prompt per page, and gives you a QA checklist for the images that come back.
+The skill interviews you first (source, privacy, image type, audience, where the image will be used), pulls candidate moments out of your material, writes one prompt per page, and gives you a QA checklist for the images that come back.
 
 ## Example output
 
-These two pages come from a real but small interview study, anonymised: the study looked at how customers of a financial-services provider talk about the product with colleagues and friends after buying, and whether they pass on a referral link. Names, the organisation and the product were removed or blacked out, and the interviews themselves are not included. Both pages were rendered in Gemini (Nano Banana, "Pro" mode, paid plan) and then edited in the same chat.
+These two pages come from a real but small interview study, anonymised: the study looked at how customers of a financial-services provider talk about the service with colleagues and friends after buying, and whether they pass on a referral link. Names, the organisation and the product were removed or blacked out, and the interviews themselves are not included. Both pages were rendered in Gemini (Nano Banana, "Pro" mode, paid plan) and then edited in the same chat.
 
 ![A four-panel comic: two colleagues are asked a question about cover, one says it is different from the hospital's, a link sits in a long email list, and a message is sent with a name blacked out.](examples/images/example-story-page.jpg)
 
@@ -38,7 +38,8 @@ Your transcript or profile goes to a third-party service twice: to the LLM that 
 ## Tested on
 
 - **Paid plan:** Gemini's image creator (Nano Banana) with the "Pro" mode selected, which the picker labels "Detailed research, 3.1 Pro" (the other modes offered were "Everyday help" and "Complex problems").
-- **Both tiers needed iteration.** The paid plan needed a few rounds of edits too. One test of one page prompt on the **free tier** (Nano Banana, image mode "Auto"; the "Deeper analysis" option was locked) also produced a usable page, but with more errors and more iteration: a dropped word in a quoted line, an extra redaction bar, a blank bubble that could read as a reply, and a laptop logo. Same-chat edits fixed these, with side effects (see tips). That is one image from one run, so do not treat the free tier as equivalent.
+- **Free tier** Gemini's image creator (Nano Banana), image mode "Auto"; the "Deeper analysis" option was locked.
+- **Both tiers needed iteration.** The paid plan needed a few rounds of edits too. A test of one page prompt on the free tier also produced a usable page, but with more errors and more iteration: a dropped word in a quoted line, an extra redaction bar, a blank bubble that could read as a reply, and a laptop logo. Same-chat edits fixed these, with side effects (see tips). That is one image from one run, so do not treat the free tier as equivalent.
 - **Not tested:** any other image generator, other image types (single illustrations, sketchnotes), very long transcripts end to end.
 - Tested on a handful of pages: story pages built from single interview profiles and one data page restyled from a chart. Treat the prompts as a strong starting point, not a guarantee.
 
