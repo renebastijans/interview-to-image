@@ -33,6 +33,10 @@ The pull request template has a checklist that repeats these points.
 
 British English, plain wording, no jargon. Short sentences. Examples must be invented.
 
+## Credit
+
+If you want to be listed in [CONTRIBUTORS.md](CONTRIBUTORS.md), say so in your pull request or issue.
+
 ## Conduct
 
 Be kind and constructive. See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

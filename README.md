@@ -143,6 +143,7 @@ Edit instruction template:
 | `examples/` | A fully invented interview extract and one resulting page prompt, plus two anonymised example images in `examples/images/` |
 | `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
 | `CHANGELOG.md` | What changed in each release |
+| `CONTRIBUTORS.md` | People who have contributed |
 | `CODE_OF_CONDUCT.md`, `SECURITY.md` | Community conduct and how to report problems privately |
 | `LICENSE` | MIT |
 
@@ -152,7 +153,7 @@ Open an issue on this repo. Pull requests welcome, especially notes from other i
 
 ## Acknowledgements
 
-- Everyone who sends generator feedback or fixes: see the [contributors graph](https://github.com/renebastijans/interview-to-image/graphs/contributors).
+- Everyone who sends generator feedback or fixes: see [CONTRIBUTORS.md](CONTRIBUTORS.md) and the [contributors graph](https://github.com/renebastijans/interview-to-image/graphs/contributors).
 - The research participants whose interviews, in anonymised and invented form, shaped the tests and examples.
 - Written with help from Claude (Anthropic), and tested with Google's Gemini and Nano Banana.
 - The [Keep a Changelog](https://keepachangelog.com/) and [Contributor Covenant](https://www.contributor-covenant.org/) projects, which shaped the changelog and conduct files.
