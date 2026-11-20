@@ -6,6 +6,8 @@ A "profile" here means a short write-up of one interview: a summary of the key p
 
 The skill interviews you first (source, privacy, image type, audience, where the image will be used), pulls candidate moments out of your material, writes one prompt per page, and gives you a QA checklist for the images that come back.
 
+**Latest release:** [v1.0.0](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+
 ## Example output
 
 These two pages come from a real but small interview study, anonymised: the study looked at how customers of a financial-services provider talk about the service with colleagues and friends after buying, and whether they pass on a referral link. Names, the organisation and the product were removed or blacked out, and the interviews themselves are not included. Both pages were rendered in Gemini (Nano Banana, "Pro" mode, paid plan) and then edited in the same chat.
