@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this skill, please cite it as below."
+title: "interview-to-image"
+type: software
+abstract: "A skill and manual kit that turn interview transcripts, summaries or profiles into image-generation prompts, by default a hand-drawn research comic, with an intake interview and a QA checklist."
+authors:
+  - family-names: "Bastijans"
+    given-names: "René"
+    alias: "renebastijans"
+repository-code: "https://github.com/renebastijans/interview-to-image"
+url: "https://github.com/renebastijans/interview-to-image"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-20"
+keywords:
+  - user research
+  - interview analysis
+  - research communication
+  - image generation prompts
+  - comics

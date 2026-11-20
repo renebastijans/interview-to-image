@@ -144,6 +144,7 @@ Edit instruction template:
 | `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
 | `CHANGELOG.md` | What changed in each release |
 | `CONTRIBUTORS.md` | People who have contributed |
+| `CITATION.cff` | How to cite this project (GitHub shows a "Cite this repository" button) |
 | `CODE_OF_CONDUCT.md`, `SECURITY.md` | Community conduct and how to report problems privately |
 | `LICENSE` | MIT |
 
