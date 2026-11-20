@@ -27,6 +27,7 @@ The skill interviews you first (source, privacy, image type, audience, where the
 - [Known limits](#known-limits)
 - [What is in this repo](#what-is-in-this-repo)
 - [Feedback](#feedback)
+- [How to cite](#how-to-cite)
 - [Acknowledgements](#acknowledgements)
 - [Author](#author)
 
@@ -153,6 +154,29 @@ Edit instruction template:
 ## Feedback
 
 Questions, ideas and show-and-tell go in [Discussions](https://github.com/renebastijans/interview-to-image/discussions). Bugs and generator results go in [issues](https://github.com/renebastijans/interview-to-image/issues/new/choose). Pull requests welcome, especially notes from other image generators. See [CONTRIBUTING.md](CONTRIBUTING.md), including the rule against posting real interview data.
+
+## How to cite
+
+On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITATION.cff`](CITATION.cff) and gives APA and BibTeX.
+
+APA:
+
+> Bastijans, R. (2026). *interview-to-image* (Version 1.0.1) [Computer software]. https://github.com/renebastijans/interview-to-image
+
+BibTeX:
+
+```bibtex
+@software{bastijans_interview_to_image_2026,
+  author  = {Bastijans, Ren{\'e}},
+  title   = {interview-to-image},
+  year    = {2026},
+  version = {1.0.1},
+  url     = {https://github.com/renebastijans/interview-to-image},
+  license = {MIT}
+}
+```
+
+There is no DOI. Cite the version you used, and do not cite the example images as research findings: they come from a small, anonymised study and are included to show the format.
 
 ## Acknowledgements
 
