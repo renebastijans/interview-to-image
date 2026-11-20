@@ -132,6 +132,13 @@ Edit instruction template:
 
 Open an issue on this repo. Pull requests welcome, especially notes from other image generators. See [CONTRIBUTING.md](CONTRIBUTING.md), including the rule against posting real interview data.
 
+## Acknowledgements
+
+- Everyone who sends generator feedback or fixes: see the [contributors graph](https://github.com/renebastijans/interview-to-image/graphs/contributors).
+- The research participants whose interviews, in anonymised and invented form, shaped the tests and examples.
+- Written with help from Claude (Anthropic), and tested with Google's Gemini and Nano Banana.
+- The [Keep a Changelog](https://keepachangelog.com/) and [Contributor Covenant](https://www.contributor-covenant.org/) projects, which shaped the changelog and conduct files.
+
 ## Author
 
 René Bastijans, [github.com/renebastijans](https://github.com/renebastijans)
