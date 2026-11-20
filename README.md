@@ -10,6 +10,24 @@ The skill interviews you first (source, privacy, image type, audience, where the
 
 **Latest release:** [v1.0.0](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
+## Contents
+
+- [Example output](#example-output)
+- [What it does not do](#what-it-does-not-do)
+- [Privacy: read this first](#privacy-read-this-first)
+- [Tested on](#tested-on)
+- [Two ways to use it](#two-ways-to-use-it)
+  - [A. Manual copy and paste](#a-manual-copy-and-paste-any-chat-assistant-no-coding-tool)
+  - [B. Claude Code or another LLM coding product](#b-claude-code-or-another-llm-coding-product)
+- [Can I use a raw transcript?](#can-i-use-a-raw-transcript)
+- [After the prompt: render and check](#after-the-prompt-render-and-check)
+- [Iteration tips](#iteration-tips)
+- [Known limits](#known-limits)
+- [What is in this repo](#what-is-in-this-repo)
+- [Feedback](#feedback)
+- [Acknowledgements](#acknowledgements)
+- [Author](#author)
+
 ## Example output
 
 These two pages come from a real but small interview study, anonymised: the study looked at how customers of a financial-services provider talk about the service with colleagues and friends after buying, and whether they pass on a referral link. Names, the organisation and the product were removed or blacked out, and the interviews themselves are not included. Both pages were rendered in Gemini (Nano Banana, "Pro" mode, paid plan) and then edited in the same chat.
