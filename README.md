@@ -10,7 +10,7 @@ A "profile" here means a short write-up of one interview: a summary of the key p
 
 The skill interviews you first (source, privacy, image type, audience, where the image will be used), pulls candidate moments out of your material, writes one prompt per page, and gives you a QA checklist for the images that come back.
 
-**Latest release:** [v1.0.1](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+**Latest release:** [v1.0.2](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
 ## Contents
 
@@ -161,7 +161,7 @@ On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITA
 
 APA:
 
-> Bastijans, R. (2026). *interview-to-image* (Version 1.0.1) [Computer software]. https://github.com/renebastijans/interview-to-image
+> Bastijans, R. (2026). *interview-to-image* (Version 1.0.2) [Computer software]. https://github.com/renebastijans/interview-to-image
 
 BibTeX:
 
@@ -170,7 +170,7 @@ BibTeX:
   author  = {Bastijans, Ren{\'e}},
   title   = {interview-to-image},
   year    = {2026},
-  version = {1.0.1},
+  version = {1.0.2},
   url     = {https://github.com/renebastijans/interview-to-image},
   license = {MIT}
 }

@@ -4,6 +4,13 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-11-20
+
+Documentation only. The skill, references and manual kit are unchanged.
+
+### Added
+- README: "How to cite" section (APA and BibTeX) and a link to GitHub Discussions.
+
 ## [1.0.1] - 2026-11-20
 
 Documentation and repository housekeeping only. The skill, references and manual kit are unchanged from 1.0.0.
@@ -33,6 +40,7 @@ First public release.
 ### Notes
 - Tested on Gemini's Nano Banana image creator in "Pro" mode (paid plan), with one run in "Auto" mode on the free tier. Other generators are untested.
 
-[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/renebastijans/interview-to-image/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/renebastijans/interview-to-image/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/renebastijans/interview-to-image/releases/tag/v1.0.0
