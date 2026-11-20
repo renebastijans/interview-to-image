@@ -38,7 +38,7 @@ Your transcript or profile goes to a third-party service twice: to the LLM that 
 ## Tested on
 
 - **Paid plan:** Gemini's image creator (Nano Banana) with the "Pro" mode selected, which the picker labels "Detailed research, 3.1 Pro" (the other modes offered were "Everyday help" and "Complex problems").
-- **Free tier** Gemini's image creator (Nano Banana), image mode "Auto"; the "Deeper analysis" option was locked.
+- **Free tier:** Gemini's image creator (Nano Banana), image mode "Auto"; the "Deeper analysis" option was locked.
 - **Both tiers needed iteration.** The paid plan needed a few rounds of edits too. A test of one page prompt on the free tier also produced a usable page, but with more errors and more iteration: a dropped word in a quoted line, an extra redaction bar, a blank bubble that could read as a reply, and a laptop logo. Same-chat edits fixed these, with side effects (see tips). That is one image from one run, so do not treat the free tier as equivalent.
 - **Not tested:** any other image generator, other image types (single illustrations, sketchnotes), very long transcripts end to end.
 - Tested on a handful of pages: story pages built from single interview profiles and one data page restyled from a chart. Treat the prompts as a strong starting point, not a guarantee.
