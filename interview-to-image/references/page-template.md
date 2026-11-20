@@ -14,7 +14,7 @@ intake:
   image_type:
   audience:
   destination: e.g. slide deck, 16:9
-alt_text: one or two sentences describing the finished image for screen readers (fill in after rendering)
+alt_text: "one or two sentences describing the finished image for screen readers (fill in after rendering; keep it in quotes)"
 reference_images: (attach in this order, or "none")
 sibling_pages:
 status: draft for review

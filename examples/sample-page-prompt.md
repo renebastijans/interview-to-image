@@ -9,7 +9,7 @@ intake:
   image_type: comic
   audience: internal research readout, product team
   destination: slide deck, 16:9
-alt_text: Four comic panels: two colleagues at a laptop, a pause, one of them alone writing a list on paper, and the paper slipped into a notebook while the other works on.
+alt_text: "Four comic panels: two colleagues at a laptop, a pause, one of them alone writing a list on paper, and the paper slipped into a notebook while the other works on."
 reference_images: none
 sibling_pages: none (single story page, one interview, not a pattern)
 status: invented example
