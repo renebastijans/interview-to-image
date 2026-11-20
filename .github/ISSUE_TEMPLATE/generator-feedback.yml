@@ -1,0 +1,87 @@
+name: Generator feedback
+description: Report how the prompts worked (or did not) in an image generator.
+title: "Generator feedback: "
+labels: ["generator-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing. **Do not post real interview data**: no real transcripts, quotes, names, employers or products, and no images generated from them. Use invented or fully anonymised material. See [CONTRIBUTING.md](https://github.com/renebastijans/interview-to-image/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: generator
+    attributes:
+      label: Generator and mode
+      description: Product, model or mode, and plan (free or paid).
+      placeholder: "Example: Gemini image creator, Nano Banana, Auto mode, free tier"
+    validations:
+      required: true
+  - type: dropdown
+    id: usage
+    attributes:
+      label: How you used the skill
+      options:
+        - Manual copy and paste (manual kit)
+        - Claude Code or another coding product
+        - Coding product driving a browser
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: image_type
+    attributes:
+      label: Image type
+      options:
+        - Comic story page
+        - Comic data page (chart restyle)
+        - Single illustration
+        - Storyboard strip
+        - Sketchnote
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Overall result
+      options:
+        - Usable with little or no editing
+        - Usable after several edits
+        - Not usable
+    validations:
+      required: true
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked
+      description: Layout, lettering, characters, consistency, anything that held up.
+    validations:
+      required: false
+  - type: textarea
+    id: broke
+    attributes:
+      label: What went wrong
+      description: Spelling or dropped words, extra text or logos, layout drift, characters changing between panels, edits that had side effects.
+    validations:
+      required: true
+  - type: textarea
+    id: fixes
+    attributes:
+      label: What fixed it
+      description: Prompt changes or edit instructions that helped, and any that did not.
+    validations:
+      required: false
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt section used (anonymised)
+      description: The text between PROMPT START and PROMPT END, with invented or anonymised content only. Remove it if you cannot share it safely.
+      render: markdown
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This issue contains no real interview data, names, quotes or images generated from them.
+          required: true

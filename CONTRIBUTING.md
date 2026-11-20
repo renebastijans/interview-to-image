@@ -15,7 +15,7 @@ Do not put real interview transcripts, profiles, quotes, names, employers, produ
 
 ## Opening an issue
 
-Say what you tried, what you expected and what happened. For a generator problem, include the prompt section you pasted (anonymised) and a short description of the image. Do not attach images that show real people's words.
+For generator results, use the "Generator feedback" issue template. Otherwise, say what you tried, what you expected and what happened. For a generator problem, include the prompt section you pasted (anonymised) and a short description of the image. Do not attach images that show real people's words.
 
 ## Opening a pull request
 
