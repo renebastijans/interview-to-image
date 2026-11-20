@@ -152,7 +152,7 @@ Edit instruction template:
 
 ## Feedback
 
-Open an issue on this repo. Pull requests welcome, especially notes from other image generators. See [CONTRIBUTING.md](CONTRIBUTING.md), including the rule against posting real interview data.
+Questions, ideas and show-and-tell go in [Discussions](https://github.com/renebastijans/interview-to-image/discussions). Bugs and generator results go in [issues](https://github.com/renebastijans/interview-to-image/issues/new/choose). Pull requests welcome, especially notes from other image generators. See [CONTRIBUTING.md](CONTRIBUTING.md), including the rule against posting real interview data.
 
 ## Acknowledgements
 
