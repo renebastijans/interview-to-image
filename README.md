@@ -121,11 +121,12 @@ Edit instruction template:
 | `interview-to-image/` | The skill folder (`SKILL.md` plus `references/`) for Claude Code and similar tools |
 | `manual/manual-kit.md` | Copy-and-paste prompts for any chat assistant |
 | `examples/` | A fully invented interview extract and one resulting page prompt, plus two anonymised example images in `examples/images/` |
+| `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
 | `LICENSE` | MIT |
 
 ## Feedback
 
-Open an issue on this repo. Pull requests welcome, especially notes from other image generators.
+Open an issue on this repo. Pull requests welcome, especially notes from other image generators. See [CONTRIBUTING.md](CONTRIBUTING.md), including the rule against posting real interview data.
 
 ## Author
 
