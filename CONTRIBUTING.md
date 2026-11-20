@@ -19,6 +19,8 @@ For generator results, use the "Generator feedback" issue template. Otherwise, s
 
 ## Opening a pull request
 
+The pull request template has a checklist that repeats these points.
+
 1. Keep it small and focused: one change per pull request.
 2. Keep the skill short. Detail goes in `interview-to-image/references/`, not in `SKILL.md`.
 3. If you change the skill, keep the manual kit in `manual/manual-kit.md` and the README consistent with it.
