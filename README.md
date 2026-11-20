@@ -1,6 +1,7 @@
 # interview-to-image
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Cite this repository](https://img.shields.io/badge/Cite-CITATION.cff-blue.svg)](CITATION.cff)
 
 Research findings may land better as a picture than as a paragraph. This skill turns interview transcripts, summaries or profiles into prompts for an image generator, by default a hand-drawn research comic, so you can present findings (or any other work) in a more engaging, relatable way than a report alone. Use the images instead of a report, or alongside one to make the findings easier to remember. Free, MIT licensed.
 
