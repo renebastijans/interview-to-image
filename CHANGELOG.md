@@ -4,6 +4,16 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-11-21
+
+Documentation and examples only. The skill, references and manual kit are unchanged from 1.1.0.
+
+### Added
+- README: "Worked example on open data", with one panel made from a public CC BY 4.0 interview dataset, credited in full.
+- `examples/open-data/`: the panel's prompt and a source note.
+- Acknowledgements: the dataset's author and host.
+- `CONTRIBUTING.md`: exception to the no-real-data rule for public, open-licence, credited material.
+
 ## [1.1.0] - 2026-11-21
 
 Changes come from a test of the manual kit on free Claude chat and free Gemini.
@@ -59,7 +69,8 @@ First public release.
 ### Notes
 - Tested on Gemini's Nano Banana image creator in "Pro" mode (paid plan), with one run in "Auto" mode on the free tier. Other generators are untested.
 
-[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/renebastijans/interview-to-image/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/renebastijans/interview-to-image/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/renebastijans/interview-to-image/compare/v1.0.0...v1.0.1

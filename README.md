@@ -10,11 +10,12 @@ A "profile" here means a short write-up of one interview: a summary of the key p
 
 The skill interviews you first (source, privacy and licence, image type, audience, text in the image, where the image will be used), pulls candidate moments out of your material or proposes the images, waits for your approval, writes one prompt per image, and gives you a QA checklist for the images that come back.
 
-**Latest release:** [v1.1.0](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+**Latest release:** [v1.1.1](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
 ## Contents
 
 - [Example output](#example-output)
+- [Worked example on open data](#worked-example-on-open-data)
 - [What it does not do](#what-it-does-not-do)
 - [Privacy: read this first](#privacy-read-this-first)
 - [Tested on](#tested-on)
@@ -44,6 +45,16 @@ These two pages come from a real but small interview study, anonymised: the stud
 *Data page: a chart restyled in the same hand-drawn look. Counts are "n of N", "direction, not rates".*
 
 The prompts for these two pages are not included. `examples/` holds a fully invented sample (extract and prompt) that shows the format.
+
+## Worked example on open data
+
+The hero examples above cannot be reproduced, because their interviews are private. This one can. It comes from a public, anonymised interview dataset under CC BY 4.0: Enriquez, Diana. "Delivery Gig Worker Interviews on Automation at Work." September 2019. Princeton Data Commons. [https://doi.org/10.34770/4324-yn77](https://doi.org/10.34770/4324-yn77). It was made on a different computer with the free Claude chat app and a free Gemini account (Nano Banana), following the [manual kit](manual/manual-kit.md).
+
+![A comic panel in flat colours: a delivery driver stands beside their own coral car, holding a phone with a low battery and a food bag. A caption reads "You carry the costs" and a speech bubble reads "I use my own phone, my own car."](examples/images/example-open-data-panel.jpg)
+
+*One panel of a six-panel storyboard strip. The line in the bubble is verbatim from one interview; the driver is a fictional composite, not a real interviewee. It is a flat-colour comic, a different style from the hand-drawn pages above.*
+
+The prompt and the full source note are in [`examples/open-data/`](examples/open-data/). The image is an adaptation of one quoted line, is not endorsed by the dataset's authors, and one quote from a 2019 US interview is not a pattern.
 
 ## What it does not do
 
@@ -151,7 +162,7 @@ Edit instruction template:
 |---|---|
 | `interview-to-image/` | The skill folder (`SKILL.md` plus `references/`) for Claude Code and similar tools |
 | `manual/manual-kit.md` | One copy-and-paste prompt for any chat assistant, plus optional templates |
-| `examples/` | A fully invented interview extract and one resulting page prompt, plus two anonymised example images in `examples/images/` |
+| `examples/` | A fully invented interview extract and one resulting page prompt, two anonymised example images in `examples/images/`, and an open-data example (`examples/open-data/`: prompt, source note, image) |
 | `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
 | `CHANGELOG.md` | What changed in each release |
 | `CONTRIBUTORS.md` | People who have contributed |
@@ -169,7 +180,7 @@ On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITA
 
 APA:
 
-> Bastijans, R. (2026). *interview-to-image* (Version 1.1.0) [Computer software]. https://github.com/renebastijans/interview-to-image
+> Bastijans, R. (2026). *interview-to-image* (Version 1.1.1) [Computer software]. https://github.com/renebastijans/interview-to-image
 
 BibTeX:
 
@@ -178,7 +189,7 @@ BibTeX:
   author  = {Bastijans, Ren{\'e}},
   title   = {interview-to-image},
   year    = {2026},
-  version = {1.1.0},
+  version = {1.1.1},
   url     = {https://github.com/renebastijans/interview-to-image},
   license = {MIT}
 }
@@ -190,6 +201,7 @@ There is no DOI. Cite the version you used, and do not cite the example images a
 
 - Everyone who sends generator feedback or fixes: see [CONTRIBUTORS.md](CONTRIBUTORS.md) and the [contributors graph](https://github.com/renebastijans/interview-to-image/graphs/contributors).
 - The research participants whose interviews, in anonymised and invented form, shaped the tests and examples.
+- Diana Enriquez and Princeton Data Commons, for the open dataset "Delivery Gig Worker Interviews on Automation at Work" (2019, CC BY 4.0, [doi.org/10.34770/4324-yn77](https://doi.org/10.34770/4324-yn77)), and the drivers who agreed to be interviewed. The open-data example is adapted from one quoted line.
 - Written with help from Claude (Anthropic), and tested with Google's Gemini and Nano Banana.
 - The [Keep a Changelog](https://keepachangelog.com/) and [Contributor Covenant](https://www.contributor-covenant.org/) projects, which shaped the changelog and conduct files.
 

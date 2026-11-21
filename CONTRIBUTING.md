@@ -13,6 +13,8 @@ Thanks for helping. This is a small, free skill, so the process is light.
 
 Do not put real interview transcripts, profiles, quotes, names, employers, products or images generated from them in an issue, pull request or example. Invent your material or paraphrase it so nobody can be identified. If you are unsure, leave it out.
 
+**One exception:** real material that is public, anonymised by its authors, and under an open licence. Credit it in full, link to the source, use as little as you need, and say what you changed. `examples/open-data/` shows the pattern. Interviews you conducted yourself are not covered by this exception.
+
 If you find real personal data or an unsafe instruction in this repository, do not open a public issue. Follow [SECURITY.md](SECURITY.md).
 
 ## Opening an issue
