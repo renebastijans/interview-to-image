@@ -4,6 +4,23 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+## [1.1.3] - 2026-11-21
+
+From scripted tests of the one-paste kit.
+
+### Fixed
+- README: the open-data example image is shown at a width that matches the height of the two other example images.
+
+### Changed
+- Manual kit: the "Round 1/Round 2" headers are gone, so the stated question order no longer contradicts the layout. The assistant says it has the attached files, and says the anonymisation default once.
+- Mandatory removals are only the categories named in question 4; the rest of the default applies unless the user says otherwise.
+- Question 8 also asks which language the alt text and in-image text should be in.
+- Headline for paraphrase-only sources: at most three words reused from the source.
+- Invented characters: gender neutral unless the source says. A file header such as "4 of 9" is not counted; only attached files are.
+- Plan: a user takeaway that generalises from one interview is challenged. The long-transcript threshold is the file's length (about 3,000 words).
+- Prompt: say where the text sits, what screens show, and show objects that would carry writing as lines or blocks only.
+- Check: font style and logos on objects are checked; the assistant sends corrections that do not depend on an open question straight away, one at a time; it counts attempts per correction (editor suggestion after the third failure, then a final check); partial descriptions get a follow-up; and it ends with a recap of accepted images, alt text, credit and caveats.
+
 ## [1.1.2] - 2026-11-21
 
 Changes come from a scripted test of the one-paste kit in a simulated fresh chat.
@@ -82,7 +99,8 @@ First public release.
 ### Notes
 - Tested on Gemini's Nano Banana image creator in "Pro" mode (paid plan), with one run in "Auto" mode on the free tier. Other generators are untested.
 
-[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.2...HEAD
+[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.3...HEAD
+[1.1.3]: https://github.com/renebastijans/interview-to-image/compare/v1.1.2...v1.1.3
 [1.1.2]: https://github.com/renebastijans/interview-to-image/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/renebastijans/interview-to-image/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...v1.1.0

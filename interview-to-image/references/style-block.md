@@ -45,6 +45,7 @@ These fixed real defects in testing on Gemini (Nano Banana), including a free-ti
 - **One person only:** "Only one person appears; do not repeat or duplicate them." A character was drawn twice until this was added.
 - **Age:** "visibly an adult in their mid-30s". "Mid-30s" alone drew a face that looked younger.
 - **Background:** "simple uncluttered background with few objects". Name the palette and add "avoid brown" (or the colour that crept in).
+- **Objects that would carry writing** (paper, screens, signs): say "lines or blocks only, no writing", or the "no other text" rule collides with them.
 - **Small details drift** (trousers colour, laptop open or closed, grille badge, a tiny icon too small to read at web size). State them explicitly, make key icons large, and accept small ones as blemishes.
 - **Logos and plates:** "no logos or brand marks on any object, including laptops and phones; no licence plate text; grille and badge blank". A logo on a laptop appeared in one free-tier run.
 - **Consistency across a set:** repeat the identical character description in every prompt, and attach the first accepted image as a reference for the rest.

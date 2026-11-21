@@ -20,6 +20,7 @@ Read every line of lettering at full resolution and compare it with the prompt's
 - [ ] Panel headings in the same position as the sibling pages
 - [ ] Recurring props match the earlier page they echo; log differences
 - [ ] Data pages: bar count, labels, order, ratios and flat bands match the check table (measure in pixels); solid and dashed counts per row; one accent colour; counts and footnotes exact
+- [ ] Font style as briefed (upright, uniform weight)
 - [ ] Lettering style: upright, uniform weight, no bold or italic emphasis, no stray punctuation (full stop after a caption)
 - [ ] One person where the prompt says one (no duplicated figure); apparent age as briefed; clothing details (trousers, shoes) as briefed
 - [ ] Background simple; palette as named (no stray colour)
@@ -32,7 +33,7 @@ To fix one problem, reply **in the same chat** with an edit instruction rather t
 
 > Regenerate this exact image and change nothing else, with one correction: in panel N the text currently reads "…". It must read exactly "…". Keep everything else exactly as it is, including any blemish already accepted.
 
-When several things are wrong, send one correction at a time: people and objects first, lettering last. If two people are duplicated, say which to keep. If the same correction fails three times, fix it in an image editor. If you cannot see the image, ask the user to read out every word and describe each figure.
+When several things are wrong, send one correction at a time: people and objects first, lettering last. If two people are duplicated, say which to keep. Count attempts at each correction; if the same one fails three times, fix it in an image editor and check the edited image once more. If two people are duplicated, ask which to keep, and meanwhile send the corrections that do not depend on the answer, one at a time. If you cannot see the image, ask the user to read out every word and describe each figure.
 
 In testing this held on the first try. Edits can still undo earlier fixes or cover text when a hand is moved, and can change other panels (clothing, framing). Name the panel to change, say what must stay in frame, fix an empty area by cropping rather than repositioning one element, and recheck every panel after each edit. If the generator distorts a chart, place the exact chart (SVG) over its paper and figures.
 

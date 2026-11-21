@@ -10,7 +10,7 @@ A "profile" here means a short write-up of one interview: a summary of the key p
 
 The skill interviews you first (source, privacy and licence, image type, audience, text in the image, where the image will be used), pulls candidate moments out of your material or proposes the images, waits for your approval, writes one prompt per image, and gives you a QA checklist for the images that come back.
 
-**Latest release:** [v1.1.2](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+**Latest release:** [v1.1.3](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
 ## Contents
 
@@ -50,7 +50,7 @@ The prompts for these two pages are not included. `examples/` holds a fully inve
 
 The hero examples above cannot be reproduced, because their interviews are private. This one can. It comes from a public, anonymised interview dataset under CC BY 4.0: Enriquez, Diana. "Delivery Gig Worker Interviews on Automation at Work." September 2019. Princeton Data Commons. [https://doi.org/10.34770/4324-yn77](https://doi.org/10.34770/4324-yn77). It was made on a different computer with the free Claude chat app and a free Gemini account (Nano Banana), following the [manual kit](manual/manual-kit.md).
 
-![A comic panel in flat colours: a delivery driver stands beside their own coral car, holding a phone with a low battery and a food bag. A caption reads "You carry the costs" and a speech bubble reads "I use my own phone, my own car."](examples/images/example-open-data-panel.jpg)
+<img src="examples/images/example-open-data-panel.jpg" alt="A comic panel in flat colours: a delivery driver stands beside their own coral car, holding a phone with a low battery and a food bag. A caption reads &quot;You carry the costs&quot; and a speech bubble reads &quot;I use my own phone, my own car.&quot;" width="620">
 
 *One panel of a six-panel storyboard strip. The line in the bubble is verbatim from one interview; the driver is a fictional composite, not a real interviewee. It is a flat-colour comic, a different style from the hand-drawn pages above.*
 
@@ -180,7 +180,7 @@ On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITA
 
 APA:
 
-> Bastijans, R. (2026). *interview-to-image* (Version 1.1.2) [Computer software]. https://github.com/renebastijans/interview-to-image
+> Bastijans, R. (2026). *interview-to-image* (Version 1.1.3) [Computer software]. https://github.com/renebastijans/interview-to-image
 
 BibTeX:
 
@@ -189,7 +189,7 @@ BibTeX:
   author  = {Bastijans, Ren{\'e}},
   title   = {interview-to-image},
   year    = {2026},
-  version = {1.1.2},
+  version = {1.1.3},
   url     = {https://github.com/renebastijans/interview-to-image},
   license = {MIT}
 }
