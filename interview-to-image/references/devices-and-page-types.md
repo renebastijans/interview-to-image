@@ -24,6 +24,19 @@ Pick one device per page. Check sibling pages first so no two pages repeat one. 
 
 **Answers or recommendations page.** Top panel full ink and wash (what was heard); bottom row grey pencil on cream, no wash (what is proposed, nothing has happened). Every count "of N", no percentages, a closing line that says there is no outcome data. With two reference images, if the generator redraws the sketches, recheck all lettering or generate the halves separately and join them.
 
+**Table or infographic page.** Text sits inside the image, so keep it small and exact.
+- At most four rows per image; split larger tables into several images, or fix the text in your slide editor. An eight-row table needed five prompt versions.
+- Quote every cell's text exactly, and end with "no other text". Write per-row facts out ("row 1: exactly three filled circles and two empty").
+- Show levels (confidence, rating) as filled circles from the left, not dials or gauges, which came back with no fill and duplicated labels. A row with no level gets "no circles at all and no other text in the cell".
+- Add a negative rule for each defect seen before ("only row 7 is grey; row 8 plain cream", "never repeat a label").
+- Keep highlight tags or ribbons in an empty margin outside the table, straight and unrotated, one tag per row, never over cell text.
+- Leave a clear gap between columns and a margin along the bottom for the credit line, which you add outside the image.
+- Counts as "n of N" or "at least n of N", and say so when they are minimums.
+
+**Storyboard strip.** One image per panel, each with the same character description, rather than one combined image. Decide before drafting which panels carry text inside the image and keep it uniform across the strip. Put longer descriptions and verbatim quotes in the page's HTML, not in the image.
+
+**Themes scene.** One scene can carry about six themes as small vignettes. Say the road or thread joins them all, that the light changes smoothly (no hard line), and that the same character appears in every vignette.
+
 ## Story-page rules
 
 - **Make rank or role legible without a label.** E.g. a manager wears a long grey coat in every panel, the team wears shirts only, and "nothing in the panel may label them as manager".

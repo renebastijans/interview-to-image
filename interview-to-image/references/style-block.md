@@ -35,3 +35,17 @@ Create a new four-panel research comic using the following aesthetic and present
 - **Later pages of a set:** "Create a new page for the same hand-drawn research comic as the attached image(s)" and attach earlier pages.
 
 Panel headings: a small icon and a hand-lettered "N. TITLE" inside the frame at the top, consistent across pages.
+
+## Reliability rules (any style)
+
+These fixed real defects in testing on Gemini (Nano Banana), including a free-tier run. Add the ones that apply.
+
+- **Exact text:** put each line in quotes, say "spelled exactly as written", then "No other text, letters or numbers anywhere in the image". Short lines came back correct every time.
+- **Lettering style:** ask for an upright (non-italic) font of uniform weight, with "no bold or italic emphasis on any word". Without it, one word came back bold and a caption came back italic. Write the caption with the punctuation you want: a stray full stop appeared after a caption in one render.
+- **One person only:** "Only one person appears; do not repeat or duplicate them." A character was drawn twice until this was added.
+- **Age:** "visibly an adult in their mid-30s". "Mid-30s" alone drew a face that looked younger.
+- **Background:** "simple uncluttered background with few objects". Name the palette and add "avoid brown" (or the colour that crept in).
+- **Small details drift** (trousers colour, laptop open or closed, grille badge, a tiny icon too small to read at web size). State them explicitly, make key icons large, and accept small ones as blemishes.
+- **Logos and plates:** "no logos, no brand marks, no licence plate text, grille and badge blank".
+- **Consistency across a set:** repeat the identical character description in every prompt, and attach the first accepted image as a reference for the rest.
+- **Each regeneration can change something else.** After every re-run, recheck the whole image, not only the part you fixed.

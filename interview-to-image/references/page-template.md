@@ -11,6 +11,7 @@ intake:
   source: transcript / summary / profile / notes
   privacy: paraphrase or verbatim; what was removed
   consent: on record? for what use?
+  licence_credit: licence and credit line to place outside the image, or "none"
   image_type:
   audience:
   destination: e.g. slide deck, 16:9

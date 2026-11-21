@@ -4,6 +4,25 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-21
+
+Changes come from a test of the manual kit on free Claude chat and free Gemini.
+
+### Changed
+- Manual kit is now one paste that runs intake, plan approval, prompt writing and image checks in the same chat. The separate moments, page-writing and render steps, and the three reference files, are an optional appendix.
+- Intake: numbered questions, an explicit list of unanswered ones, "what must be removed" asked on its own, and new questions on licence and credit, the source of truth when files overlap, and text inside the image (none, headline, quote, full labels).
+- Intake: "analysis report of findings" is a source type, and a scope change triggers a short extra round.
+- Plan approval before prompts are written is now an explicit step.
+- Source caveats (counts are minimums, sample, year) and credit lines go outside the image.
+- QA: paste each render back for a check; recheck the whole image after every edit.
+- README: tested-on note, manual-kit steps, iteration tips and known limits updated.
+
+### Added
+- `references/single-image-template.md` for storyboard panels, illustrations and tables.
+- Reliability rules in `references/style-block.md` (exact text, lettering style, one person, age, background, drift, consistency).
+- Table or infographic, storyboard strip and themes scene guidance in `references/devices-and-page-types.md`.
+- QA checklist items for lettering style, duplicated people, age and clothing, background and palette, and tables.
+
 ## [1.0.2] - 2026-11-20
 
 Documentation only. The skill, references and manual kit are unchanged.
@@ -40,7 +59,8 @@ First public release.
 ### Notes
 - Tested on Gemini's Nano Banana image creator in "Pro" mode (paid plan), with one run in "Auto" mode on the free tier. Other generators are untested.
 
-[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/renebastijans/interview-to-image/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/renebastijans/interview-to-image/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/renebastijans/interview-to-image/releases/tag/v1.0.0

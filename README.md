@@ -8,9 +8,9 @@ Research findings may land better as a picture than as a paragraph. This skill t
 
 A "profile" here means a short write-up of one interview: a summary of the key points with a few quotes. A summary is the same idea, shorter and without quotes.
 
-The skill interviews you first (source, privacy, image type, audience, where the image will be used), pulls candidate moments out of your material, writes one prompt per page, and gives you a QA checklist for the images that come back.
+The skill interviews you first (source, privacy and licence, image type, audience, text in the image, where the image will be used), pulls candidate moments out of your material or proposes the images, waits for your approval, writes one prompt per image, and gives you a QA checklist for the images that come back.
 
-**Latest release:** [v1.0.2](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+**Latest release:** [v1.1.0](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
 ## Contents
 
@@ -65,18 +65,20 @@ Your transcript or profile goes to a third-party service twice: to the LLM that 
 - **Paid plan:** Gemini's image creator (Nano Banana) with the "Pro" mode selected, which the picker labels "Detailed research, 3.1 Pro" (the other modes offered were "Everyday help" and "Complex problems").
 - **Free tier:** Gemini's image creator (Nano Banana), image mode "Auto"; the "Deeper analysis" option was locked.
 - **Both tiers needed iteration.** The paid plan needed a few rounds of edits too. A test of one page prompt on the free tier also produced a usable page, but with more errors and more iteration: a dropped word in a quoted line, an extra redaction bar, a blank bubble that could read as a reply, and a laptop logo. Same-chat edits fixed these, with side effects (see tips). That is one image from one run, so do not treat the free tier as equivalent.
-- **Not tested:** any other image generator, other image types (single illustrations, sketchnotes), very long transcripts end to end.
-- Tested on a handful of pages: story pages built from single interview profiles and one data page restyled from a chart. Treat the prompts as a strong starting point, not a guarantee.
+- **Free Claude chat plus free Gemini (Nano Banana), manual kit:** a separate test on a different computer used the manual kit with the free Claude chat app and a free Gemini account, on an open interview dataset. It produced a flat-colour comic storyboard (two panels checked), a themes illustration and a questions illustration, and an eight-row recommendations table with text inside the image. Short exact lines were spelled correctly every time. Small details drifted (trousers colour, laptop open or closed, italic or bold lettering, a stray full stop), and the dense table needed four renders. Details are in the iteration tips.
+- **Not tested:** any other image generator, sketchnotes, very long transcripts end to end.
+- Tested on a handful of pages: story pages built from single interview profiles, one data page restyled from a chart, and the free-tier test above. Treat the prompts as a strong starting point, not a guarantee.
 
 ## Two ways to use it
 
 ### A. Manual copy and paste (any chat assistant, no coding tool)
 
-1. Open [`manual/manual-kit.md`](manual/manual-kit.md).
-2. Paste the intake prompt into your chat assistant and answer its questions.
-3. Paste the moments prompt followed by your (anonymised) source. Pick a moment.
-4. Paste the three reference files named in the kit, then the page-writing prompt.
-5. Copy the section between `PROMPT START` and `PROMPT END` into your image generator.
+1. Open [`manual/manual-kit.md`](manual/manual-kit.md) and attach your (anonymised) source files to a new chat. A chat assistant cannot read folders on your computer.
+2. Paste the one prompt from the kit and answer its questions. The assistant then proposes the images, waits for your approval, and writes the prompts.
+3. Copy the section between `PROMPT START` and `PROMPT END` into your image generator.
+4. Paste each render back into the chat assistant for a check, and use its edit instruction.
+
+The kit also lists optional reference files to paste for more control.
 
 ### B. Claude Code or another LLM coding product
 
@@ -126,6 +128,11 @@ Edit instruction template:
 - **Edits can leak into other panels.** Name the panel to change, then recheck every panel afterwards; one edit changed a character's clothing in a different panel.
 - **Layout may drift.** A longer lettering block turned four panels in a row into a 2x2 grid. Say "four panels in one row, left to right" if it matters.
 - **Charts:** build the exact chart yourself (script or SVG), attach it, and say "restyle, not redesign". In testing, figure positions, counts and labels came back accurately.
+- **Say how text should look.** Ask for an upright font of uniform weight and no emphasis on any word, and write each caption with the punctuation you want. Without it, bold words, italics and a trailing full stop appeared.
+- **One person means "one person".** Say "only one person appears; do not duplicate them" and "visibly an adult"; both fixed defects in testing.
+- **Keep the background simple and name the palette,** including any colour to avoid.
+- **Keep tables small.** An eight-row table with text inside the image took four renders. Aim for about four rows per image, show levels as filled circles, put tags in an empty margin, and fix the last details in your slide editor.
+- **Keep the character consistent** by repeating the identical description in every prompt and attaching the first accepted image as a reference for the rest.
 - **Check every word.** Dropped words are the most common lettering fault ("when can." for "when you can.").
 - **Treat the first render as a draft.** Every image needs a human read.
 - **Never let a data page imply more than it knows:** counts as "n of N", no percentages for small samples, "direction, not rates", no funnel or arrows between rows.
@@ -134,7 +141,8 @@ Edit instruction template:
 
 - Text inside images is fragile: expect to check and fix lettering.
 - Layout can drift from what you asked for.
-- One image model family tested: mainly a paid plan, one run on the free tier.
+- One image model family tested: a paid plan, plus free-tier runs.
+- Small details (clothing, objects, tiny icons) drift between renders; accept them as blemishes or fix them one at a time.
 - One interview is not a pattern; the skill flags this and writes one story page only.
 
 ## What is in this repo
@@ -142,7 +150,7 @@ Edit instruction template:
 | Path | What |
 |---|---|
 | `interview-to-image/` | The skill folder (`SKILL.md` plus `references/`) for Claude Code and similar tools |
-| `manual/manual-kit.md` | Copy-and-paste prompts for any chat assistant |
+| `manual/manual-kit.md` | One copy-and-paste prompt for any chat assistant, plus optional templates |
 | `examples/` | A fully invented interview extract and one resulting page prompt, plus two anonymised example images in `examples/images/` |
 | `CONTRIBUTING.md` | How to contribute, and the no-real-data rule |
 | `CHANGELOG.md` | What changed in each release |
@@ -161,7 +169,7 @@ On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITA
 
 APA:
 
-> Bastijans, R. (2026). *interview-to-image* (Version 1.0.2) [Computer software]. https://github.com/renebastijans/interview-to-image
+> Bastijans, R. (2026). *interview-to-image* (Version 1.1.0) [Computer software]. https://github.com/renebastijans/interview-to-image
 
 BibTeX:
 
@@ -170,7 +178,7 @@ BibTeX:
   author  = {Bastijans, Ren{\'e}},
   title   = {interview-to-image},
   year    = {2026},
-  version = {1.0.2},
+  version = {1.1.0},
   url     = {https://github.com/renebastijans/interview-to-image},
   license = {MIT}
 }
