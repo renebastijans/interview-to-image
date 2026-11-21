@@ -4,6 +4,19 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ## [Unreleased]
 
+## [1.1.2] - 2026-11-21
+
+Changes come from a scripted test of the one-paste kit in a simulated fresh chat.
+
+### Changed
+- Manual kit and `SKILL.md`: the question order is now explicit (1 to 3, then 4 alone, then 5, then 6 to 8, then 9), answering ahead is accepted, and removals default to "every listed category".
+- Aspect ratio is proposed from a short mapping and must be confirmed; alt text is yes for anything published or shared.
+- Headline rule for paraphrase-only sources, and an invented generic character when the source gives no description.
+- Prompt rules: state capitalisation and punctuation for each text line, and "no logos or brand marks on any object, including laptops and phones".
+- Check step: a text-only fallback (the user reads out the words), corrections ordered people and objects first and lettering last, a question about which duplicate to keep, a stop after three failed corrections, and an edit template that keeps accepted blemishes instead of "every face and line".
+- Short transcripts skip the topic list (threshold about 20 minutes or 3,000 words).
+- Alt text is written in the audience's language; "none" is written when there is no credit line.
+
 ## [1.1.1] - 2026-11-21
 
 Documentation and examples only. The skill, references and manual kit are unchanged from 1.1.0.
@@ -69,7 +82,8 @@ First public release.
 ### Notes
 - Tested on Gemini's Nano Banana image creator in "Pro" mode (paid plan), with one run in "Auto" mode on the free tier. Other generators are untested.
 
-[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/renebastijans/interview-to-image/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/renebastijans/interview-to-image/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/renebastijans/interview-to-image/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/renebastijans/interview-to-image/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/renebastijans/interview-to-image/compare/v1.0.1...v1.0.2

@@ -13,31 +13,31 @@ Tested styles: a four-panel hand-drawn research comic (Gemini's image creator, N
 
 ### 1. Intake (before drafting anything)
 
-Ask in short rounds (two or three questions at a time, not one long form). Skip anything the user has already answered. Do not draft until round 2 is answered.
+Ask in short rounds (questions 1 to 3, then the removals question on its own, then the licence question, then image and use, then text in the image; accept answers given ahead). Skip anything the user has already answered. Do not draft until round 2 is answered.
 
 **Round 1: source and privacy**
 - What is the source: transcript, summary, profile, notes, survey free text, or an analysis report of findings? Which language? One interview or a set? If several files overlap (for example transcripts and an analysis of them), which is the source of truth? Files must be attached; a chat assistant cannot read folders on the user's computer.
 - Is the image for public use (portfolio, blog, conference, shared deck) or internal/client use? May this text go into an LLM and a third-party image generator at all? Is consent on record for this use?
 - Verbatim quotes allowed in the output, or paraphrase only?
-- What must be removed (names, employer, role, location, products, amounts)? Ask this as its own question: in testing it was skipped when bundled. For internal or client use, with consent and data rules allowing it, real names and details may stay; ask, do not assume.
+- What must be removed (names, employer, role, location, products, amounts)? Ask this as its own question: in testing it was skipped when bundled. Remove every listed category unless the user says it may stay. For internal or client use, with consent and data rules allowing it, real names and details may stay; ask, do not assume.
 - Does the source licence require credit (for example CC BY)? If so, get the credit line; it goes outside the image.
 - Default to paraphrase and full anonymisation for public use, or when the user is unsure. Say that default out loud.
 
 **Round 2: image and audience**
 - Image type: comic (the default), storyboard strip, single illustration, sketchnote, table or infographic, chart restyle, other? House style or brand constraints? Reference image to attach?
 - Audience: who sees it, what should they take away, how much do they already know?
-- Where will it be used (Google Slides, PowerPoint, Keynote, HTML page, document, print, social)? This sets the **aspect ratio**, the resolution, whether **alt text** is needed, and whether the output is one image or a set. Never hardcode 16:9; set it from this answer.
+- Where will it be used (Google Slides, PowerPoint, Keynote, HTML page, document, print, social)? This sets the **aspect ratio**, the resolution, whether **alt text** is needed, and whether the output is one image or a set. Never hardcode 16:9; propose the ratio from this answer (widescreen deck 16:9, older deck 4:3, web page 4:3 or 16:9, document 3:4 or 4:3, social 1:1 or 4:5) and have the user confirm it. Alt text: yes for anything published or shared.
 
-- **Text in the image:** none, a headline only, a headline plus a quote, or full labels? Ask up front; deciding it per image later cost a round in testing. Short exact text renders reliably; dense tables do not.
+- **Text in the image:** none, a headline only, a headline plus a quote, or full labels? Ask up front; deciding it per image later cost a round in testing. Short exact text renders reliably; dense tables do not. If quotes are paraphrase-only, write any headline yourself as a short phrase and mark it written for the image.
 
-Number the questions. If any are unanswered, list the numbers and ask again before moving on. Say the answers back in one line each and let the user correct them. Record them in the `intake` block of every prompt file. If the scope changes later (new audience, new image, new takeaway), run a short extra round for what changed rather than carrying on with old answers.
+Number the questions. If any are unanswered, list the numbers and ask again before moving on. Say the answers back in one line each, including the aspect ratio, and let the user correct them. If the source gives no description of the people (age, hair, clothing), propose a generic invented character and say it is invented. Record them in the `intake` block of every prompt file. If the scope changes later (new audience, new image, new takeaway), run a short extra round for what changed rather than carrying on with old answers.
 
 ### 2. Moments (transcript to candidate list)
 
 Image prompts never contain the transcript. They contain one scene. Compress the source first:
 
 - **Transcript:** read it, fix speech-to-text errors (names rendered several ways, misheard words), then list candidate moments: exact quote, speaker, whether the interviewer prompted it, timestamp. Flag and fix transcription errors before quoting.
-- **Long transcripts:** make a first pass that lists topics, then extract moments per topic. Do not try to turn a 40-minute transcript into a comic in one step.
+- **Long transcripts** (more than about 20 minutes or 3,000 words; for a short one go straight to moments): make a first pass that lists topics, then extract moments per topic. Do not try to turn a 40-minute transcript into a comic in one step.
 - **Analysis report of findings (themes, recommendations):** nothing to extract; propose the images, and carry the report's caveats (counts are minimums, sample, year, one coder) into the credit line outside the image.
 - **Profile or summary:** already compressed. Mark lines "paraphrase, no timestamp" and point to the transcript for later verification.
 - **Prompted versus unprompted:** keep the marker. Anything the interviewer raised first is stated intent, not behaviour; it goes in "must not say" for story pages. A line that only answers a yes/no or leading question ("were you angry?" "yes") counts as prompted; a line that adds something the question did not ask for is unprompted.
@@ -64,7 +64,7 @@ Give the user these steps, in plain words:
 
 ### 6. QA returned images
 
-Ask the user to paste each returned image back. If your product can read images, check it with `references/qa-checklist.md` and give one same-chat edit instruction per problem. Otherwise give them the checklist. Log accepted blemishes; do not reopen them. Every image needs a human read; treat the first render as a draft.
+Ask the user to paste each returned image back. If you cannot see images, ask them to read out every word and describe every figure. If your product can read images, check it with `references/qa-checklist.md` and give one same-chat edit instruction per problem, people and objects first and lettering last. If two people are duplicated, ask which to keep. If the same correction fails three times, suggest fixing it in an image editor. Otherwise give them the checklist. Log accepted blemishes; do not reopen them. Every image needs a human read; treat the first render as a draft.
 
 ## Rules that carry across pages
 

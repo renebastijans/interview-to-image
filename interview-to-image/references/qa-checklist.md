@@ -6,7 +6,7 @@ Read every line of lettering at full resolution and compare it with the prompt's
 - [ ] Every word of every bubble is present (a dropped word, e.g. "when can." for "when you can.", is a lettering error)
 - [ ] No other lettering (charts, walls, badges, mugs). Garbled incidental text: regenerate or log as an accepted blemish
 - [ ] No unprompted title or caption above the panels
-- [ ] No company, person, product, provider or place name anywhere
+- [ ] No company, person, product, provider or place name anywhere; no logo on any object (laptops, phones, cars)
 - [ ] Panel count correct; panels not split unprompted; layout as requested (row versus grid)
 - [ ] Exact head counts match ("exactly four colleagues")
 - [ ] Same character across panels (face, hair, skin tone, clothing); same people and seats in consecutive panels of one scene
@@ -30,7 +30,9 @@ Read every line of lettering at full resolution and compare it with the prompt's
 
 To fix one problem, reply **in the same chat** with an edit instruction rather than re-running the whole prompt, which redraws the faces:
 
-> Regenerate this exact image and change nothing else, with one correction: in panel N the text currently reads "…". It must read exactly "…". Keep every face, seat, layout, bubble and line of lettering exactly as it is.
+> Regenerate this exact image and change nothing else, with one correction: in panel N the text currently reads "…". It must read exactly "…". Keep everything else exactly as it is, including any blemish already accepted.
+
+When several things are wrong, send one correction at a time: people and objects first, lettering last. If two people are duplicated, say which to keep. If the same correction fails three times, fix it in an image editor. If you cannot see the image, ask the user to read out every word and describe each figure.
 
 In testing this held on the first try. Edits can still undo earlier fixes or cover text when a hand is moved, and can change other panels (clothing, framing). Name the panel to change, say what must stay in frame, fix an empty area by cropping rather than repositioning one element, and recheck every panel after each edit. If the generator distorts a chart, place the exact chart (SVG) over its paper and figures.
 

@@ -10,7 +10,7 @@ A "profile" here means a short write-up of one interview: a summary of the key p
 
 The skill interviews you first (source, privacy and licence, image type, audience, text in the image, where the image will be used), pulls candidate moments out of your material or proposes the images, waits for your approval, writes one prompt per image, and gives you a QA checklist for the images that come back.
 
-**Latest release:** [v1.1.1](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
+**Latest release:** [v1.1.2](https://github.com/renebastijans/interview-to-image/releases/latest) (see all [releases](https://github.com/renebastijans/interview-to-image/releases)).
 
 ## Contents
 
@@ -128,7 +128,7 @@ Yes, but not as the image prompt. The generator never needs the transcript. It n
 
 Edit instruction template:
 
-> Regenerate this exact image and change nothing else, with one correction: in panel N the text currently reads "…". It must read exactly "…". Keep every face, seat, layout, bubble and line of lettering exactly as it is.
+> Regenerate this exact image and change nothing else, with one correction: in panel N the text currently reads "…". It must read exactly "…". Keep everything else exactly as it is, including any blemish you have accepted.
 
 ## Iteration tips
 
@@ -180,7 +180,7 @@ On GitHub, use "Cite this repository" in the right-hand sidebar; it reads [`CITA
 
 APA:
 
-> Bastijans, R. (2026). *interview-to-image* (Version 1.1.1) [Computer software]. https://github.com/renebastijans/interview-to-image
+> Bastijans, R. (2026). *interview-to-image* (Version 1.1.2) [Computer software]. https://github.com/renebastijans/interview-to-image
 
 BibTeX:
 
@@ -189,7 +189,7 @@ BibTeX:
   author  = {Bastijans, Ren{\'e}},
   title   = {interview-to-image},
   year    = {2026},
-  version = {1.1.1},
+  version = {1.1.2},
   url     = {https://github.com/renebastijans/interview-to-image},
   license = {MIT}
 }
